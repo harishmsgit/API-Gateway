@@ -5,11 +5,9 @@ import lombok.Data;
 
 @Data
 @Entity
-//@Table(name = "questionsTB")
 public class questions {
-
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String questionTitle;
     private String option1;
